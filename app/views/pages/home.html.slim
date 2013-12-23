@@ -1,0 +1,12 @@
+h1#test Home
+p Find me in app/views/pages/home.html.slim
+
+=@variable
+
+br
+br
+h3 List of McLeans:
+ul
+  -@array.each do |mclean|
+    li
+      =mclean
