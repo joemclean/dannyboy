@@ -16,4 +16,3 @@
 /tmp
 
 /config/s3.yml
-/config/initializers/s3_config.rb
