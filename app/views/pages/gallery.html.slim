@@ -2,10 +2,11 @@ h1
   |Gallery
 .row
   - @projects.each do |project|
-    .project-container.col-sm-6.col-md-3
-      h2 
-        =link_to project.name, project
-      caption 
-        =project.caption
-      .price 
-        =project.price
+    .col-sm-6.col-md-4
+      .project-container
+        .text-wrapper
+          h3 =link_to project.name, project
+          caption 
+            =project.caption
+          .price 
+            =project.price

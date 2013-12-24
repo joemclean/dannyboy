@@ -13,13 +13,13 @@ html
             span.sr-only
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="#" Dan McLean Design
+          =link_to "Dan McLean Design", home_path, class: "navbar-brand"
         .navbar-collapse.collapse
           ul.nav.navbar-nav
             li
-              a href="#" Gallery
+              =link_to "Gallery", gallery_path
             li
-              a href="#about" About Me
+              =link_to "About Me", about_path
           ul.nav.navbar-nav.navbar-right
             li
               a href="#" Login
@@ -31,4 +31,6 @@ html
               |&times;
             = notice
       = yield
+      .well
+        =link_to "Admin", projects_path
 

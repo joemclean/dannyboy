@@ -1,9 +1,9 @@
 DannyBoy::Application.routes.draw do
   resources :projects
 
-  get "pages/home"
-  get "pages/gallery"
-  get "pages/about"
+  get "pages/home", as: :home
+  get "pages/gallery", as: :gallery
+  get "pages/about", as: :about
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

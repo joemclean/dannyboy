@@ -1,11 +1,27 @@
-h1#test Home
-p Find me in app/views/pages/home.html.slim
-
-=@variable
+.jumbotron.landing-headline
+  h1 Dan McLean Design
+  p
+    |Local art and multimedia design.
+  / .col-sm-6.col-md-offset-6.headline-text
+  /   h1 Dan McLean Design
+  /   p
+  /     |Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem.
 br
 .row
-  -@array.each do |mclean|
-    .col-sm-4.grey
-      h3
-        =mclean
-      p Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem.
+  .col-sm-6
+    h2 Multimedia Art
+    p
+      |Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem.
+    =link_to "Browse the gallery", gallery_path, class: "btn btn-primary btn-lg", style: "margin-bottom:20px;"
+  .col-sm-6
+    img style="-webkit-user-select: none; cursor: -webkit-zoom-in; width: 100%" src="http://placekitten.com/900/600"
+hr
+.row
+  .col-sm-6
+    img style="-webkit-user-select: none; cursor: -webkit-zoom-in; width: 100%" src="http://placekitten.com/600/400"
+  .col-sm-6
+    h2 Custom Work
+    p
+      |Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem. Lorem isum lorem lorem.
+    =link_to "Contact me", about_path, class: "btn btn-primary btn-lg"
+hr
