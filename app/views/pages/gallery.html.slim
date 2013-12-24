@@ -1,2 +1,9 @@
-h1 Pages#gallery
-p Find me in app/views/pages/gallery.html.slim
+h1 Gallery
+.row
+  - 5.times do
+    .col-md-6
+      .row
+        - 2.times do
+          .project-container.col-sm-6
+            h2 Project Title
+            caption Caption for the project blah blah...
