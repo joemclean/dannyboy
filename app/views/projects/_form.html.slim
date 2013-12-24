@@ -5,20 +5,20 @@
       ul
         - @project.errors.full_messages.each do |message|
           li = message
-
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :caption
-    = f.text_field :caption
-  .field
-    = f.label :description
-    = f.text_area :description
-  .field
-    = f.label :medium
-    = f.text_field :medium
-  .field
-    = f.label :price
-    = f.text_field :price
-  .actions = f.submit 'Save'
+  .row
+    .form-group.col-md-7
+      = f.label :name
+      = f.text_field :name, class: "form-control"
+    .form-group.col-md-7
+      = f.label :caption
+      = f.text_field :caption, class: "form-control"
+    .form-group.col-md-7
+      = f.label :description
+      = f.text_area :description, class: "form-control"
+    .form-group.col-md-7
+      = f.label :medium
+      = f.text_field :medium, class: "form-control"
+    .form-group.col-md-7
+      = f.label :price
+      = f.text_field :price, class: "form-control"
+  .actions = f.submit 'Save', class: "btn btn-primary"
