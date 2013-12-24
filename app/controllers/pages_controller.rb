@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    @projects = Project.all
   end
 
   def about

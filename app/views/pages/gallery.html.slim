@@ -1,9 +1,11 @@
-h1 Gallery
+h1 
+  |Gallery
 .row
-  - 5.times do
-    .col-md-6
-      .row
-        - 2.times do
-          .project-container.col-sm-6
-            h2 Project Title
-            caption Caption for the project blah blah...
+  - @projects.each do |project|
+    .project-container.col-sm-6.col-md-3
+      h2 
+        =link_to project.name, project
+      caption 
+        =project.caption
+      .price 
+        =project.price
