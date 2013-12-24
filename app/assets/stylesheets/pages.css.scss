@@ -24,6 +24,9 @@ $light-tan: #e3c294;
     color: #ccc;
     padding: 10px;
     @include transition(background-color .6s);
+    a:hover {
+      color: white;
+    }
     div {
       opacity: 0;
       @include transition(opacity .6s);

@@ -14,8 +14,13 @@
 
 @import "twitter/bootstrap";
 
-$tan: #ccae86;
-$light-tan: #e3c294;
+@mixin transition($property) {
+  -webkit-transition: $property;
+     -moz-transition: $property;
+      -ms-transition: $property;
+       -o-transition: $property;
+          transition: $property;
+}
 
 .grey {
   background-color: #cccccc;
@@ -44,10 +49,11 @@ h3 {
   a {color: white;}
 }
 .btn {
-  background-color: $tan;
-  border-color: $light-tan;
+  background-color: rgba(0,0,0,0.5);
+  border-color: #333;
+  @include transition(background-color .6s)
 }
 .btn:hover {
-  background-color: $tan;
+  background-color: #333;
   border-color: black;
 }
