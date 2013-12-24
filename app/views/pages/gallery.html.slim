@@ -1,9 +1,8 @@
-h1 
-  |Gallery
+h1 Gallery
 .row
   - @projects.each do |project|
     .col-sm-6.col-md-4
-      .project-container =link_to project
+      .project-container style="background-image: url('#{project.image.url}')" =link_to project
         .text-wrapper
           h3 =project.name
           .project-info
