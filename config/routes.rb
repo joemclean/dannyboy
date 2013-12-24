@@ -1,4 +1,6 @@
 DannyBoy::Application.routes.draw do
+  resources :projects
+
   get "pages/home"
   get "pages/gallery"
   get "pages/about"
