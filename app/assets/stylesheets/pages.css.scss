@@ -2,27 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$tan: #ccae86;
+$light-tan: #e3c294;
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+     -moz-transition: $property;
+      -ms-transition: $property;
+       -o-transition: $property;
+          transition: $property;
+}
+
 .project-container {
   background-image: url("http://placekitten.com/g/600/500");
   background-size: 100%;
   height: 250px;
-  border: 1px solid #666;
-  padding: 0px;
+  border: 1px solid #ccc;
   margin-bottom: 25px;
   .text-wrapper {
-    background-color: rgba(0,0,0,0.8);
-    padding: 10px;
+    height: 100%;
     color: #ccc;
+    padding: 10px;
+    @include transition(background-color .6s);
+    div {
+      opacity: 0;
+      @include transition(opacity .6s);
+    }
+  }
+}
+.project-container:hover {
+  .text-wrapper {
+    background-color: rgba(0,0,0,0.5);
+    div {opacity: 1;}
   }
 }
 
 .landing-headline {
   background-image: url("http://placekitten.com/g/1080/900");
   background-size: 100%;
+  background-size: cover;
   color: #fff;
   .headline-text {
     padding: 50px 30px;
     background-color: rgba(0,0,0,0.5);
-
+  }
+  h1 {
+    font-family: "Freight-Micro-Pro";
+    font-weight: 300;
+    font-size: 3em;
+    text-shadow: 0 0 10px black;
   }
 }
