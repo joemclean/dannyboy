@@ -4,7 +4,10 @@ html
     title Danny Boy
     = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
+    = javascript_include_tag "http://use.typekit.net/ckx5bhh.js"
     = csrf_meta_tags
+    javascript:
+      try{Typekit.load();}catch(e){}
   body
     .navbar.navbar-default.navbar-fixed-top 
       .container

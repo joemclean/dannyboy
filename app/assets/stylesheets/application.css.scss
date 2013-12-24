@@ -19,4 +19,22 @@
   border: 1px solid #666;
 }
 
-body { padding-top: 70px; }
+body {
+  padding-top: 70px;
+  font-family: "Adelle";
+  font-weight: 400;
+}
+
+.jumbotron {
+  height: 500px;
+}
+.jumbotron h1 {
+  font-family: "Freight-Micro-Pro";
+  font-weight: 300;
+  font-size: 5em;
+}
+h2 {
+  font-family: "Freight-Micro-Pro";
+  font-weight: 600;
+  font-style: italic;
+}
