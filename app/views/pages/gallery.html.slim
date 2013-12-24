@@ -3,10 +3,11 @@ h1
 .row
   - @projects.each do |project|
     .col-sm-6.col-md-4
-      .project-container
+      .project-container =link_to project
         .text-wrapper
-          h3 =link_to project.name, project
-          caption 
-            =project.caption
-          .price 
-            =project.price
+          h3 =project.name
+          .project-info
+            caption 
+              =project.caption
+            .price 
+              =project.price
