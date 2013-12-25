@@ -1,18 +1,20 @@
-h1
-  =@project.name
-=image_tag @project.image, style: "width: 100%"
-h3 Caption
-p
-  =@project.caption
-
-h3 Description
-p
-  =@project.description
-p
-  =@project.medium
-p
-  =@project.price
-
-= link_to 'Edit', edit_project_path(@project)
-'|
-= link_to 'Back', projects_path
+h1 =@project.name
+p =@project.caption
+.row
+  .col-sm-8
+    =image_tag @project.image
+  .col-sm-4 
+    p 
+      strong
+        |Description: 
+      =@project.description
+    p 
+      strong
+        |Medium: 
+      =@project.medium
+    p 
+      strong
+        |Price: 
+      =@project.price
+    p Interested in this project?
+    =link_to "Email me!", "mailto:jeff.t.mclean@gmail.com", class: "btn btn-primary btn-lg"
