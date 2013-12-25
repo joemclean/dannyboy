@@ -1,10 +1,20 @@
 h1 =@project.name
+p =@project.caption
 .row
   .col-sm-8
     =image_tag @project.image
   .col-sm-4 
-    h3 Description
-    p =@project.caption
-    p =@project.description
-    p =@project.medium
-    p =@project.price
+    p 
+      strong
+        |Description: 
+      =@project.description
+    p 
+      strong
+        |Medium: 
+      =@project.medium
+    p 
+      strong
+        |Price: 
+      =@project.price
+    p Interested in this project?
+    =link_to "Email me!", "mailto:jeff.t.mclean@gmail.com", class: "btn btn-primary btn-lg"
