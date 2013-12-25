@@ -2,6 +2,7 @@ h1 Listing projects
 
 table.table
   tr
+    th Image
     th Name
     th Caption
     th Description
@@ -10,18 +11,21 @@ table.table
     th
     th
     th
-
   - @projects.each do |project|
     tr
+      td = image_tag project.image, style: "width:100px"
       td = project.name
       td = project.caption
       td = project.description
       td = project.medium
       td = project.price
-      td = link_to 'Show', project
-      td = link_to 'Edit', edit_project_path(project)
-      td = link_to 'Destroy', project, data: {:confirm => 'Are you sure?'}, :method => :delete
+      td
+        = link_to 'Show', project, class: 'btn btn-primary'
+      td
+        = link_to 'Edit', edit_project_path(project), class: 'btn btn-primary'
+      td
+        = link_to 'Destroy', project, data: {:confirm => 'Are you sure?'}, :method => :delete, class: 'btn btn-primary'
 
 br
 
-= link_to 'New Project', new_project_path
+= link_to 'New Project', new_project_path, class: "btn btn-primary btn-lg"
