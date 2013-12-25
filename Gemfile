@@ -11,8 +11,8 @@ gem "slim-rails"
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                               :github => 'anjlab/bootstrap-rails'
 
-gem 'paperclip'
-gem 'aws-sdk'
+gem 'carrierwave'
+gem 'fog'
 
 group :development do
   gem 'sqlite3'
