@@ -13,6 +13,7 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 
 gem 'carrierwave'
 gem 'fog'
+gem 'rmagick'
 
 group :development do
   gem 'sqlite3'

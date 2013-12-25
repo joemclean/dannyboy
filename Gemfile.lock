@@ -108,6 +108,7 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.2)
     ruby-hmac (0.4.0)
     sass (3.2.13)
     sass-rails (4.0.1)
@@ -163,6 +164,7 @@ DEPENDENCIES
   pg
   rails (= 4.0.0)
   rails_12factor
+  rmagick
   sass-rails (~> 4.0.0)
   sdoc
   slim-rails
