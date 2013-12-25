@@ -1,9 +1,9 @@
 class AddImageToProjects < ActiveRecord::Migration
   def self.up
-    add_attachment :projects, :image
+    add_column :projects, :image, :string
   end
 
   def self.down
-    remove_attachment :projects, :image
+    remove_column :projects, :image
   end
 end

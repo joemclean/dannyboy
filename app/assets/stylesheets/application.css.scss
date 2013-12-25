@@ -54,7 +54,7 @@ h3 {
 .btn {
   background-color: rgba(0,0,0,0.5);
   border-color: #333;
-  @include transition(background-color .6s)
+  @include transition(background-color .6s);
 }
 .btn:hover {
   background-color: #333;
