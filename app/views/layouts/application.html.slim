@@ -6,6 +6,7 @@ html
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = javascript_include_tag "http://use.typekit.net/ckx5bhh.js"
     = csrf_meta_tags
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     javascript:
       try{Typekit.load();}catch(e){}
   body
@@ -18,7 +19,6 @@ html
               |&times;
             = notice
       = yield
-      .row
-        .well.col-sm-12
-          |Copyright © 2013 Dan McLean
+      .well.footer
+        |Copyright © 2013 Dan McLean
 
